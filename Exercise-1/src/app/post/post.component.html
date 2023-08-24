@@ -1,0 +1,36 @@
+<div class="messages">
+    <div *ngIf="showSuccessMessage" class="success-message">{{ successMessage }}</div>
+  </div>
+<div>
+    <h1 class="title">Create New Post</h1>
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" [(ngModel)]="newPost.title">
+    </div>
+    <div>
+      <label for="body">Body:</label>
+      <textarea id="body" [(ngModel)]="newPost.body"></textarea>
+    </div>
+    <button (click)="createPost()" #create>Create Post</button>
+  </div>
+ 
+<div *ngFor="let post of posts" class="post">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+    <button (click)="updatePostInput(post)">Update</button>
+    <button (click)="deletePost(post.id)" class=".delete-btn">Delete</button>
+  </div>
+  
+  <div *ngIf="isUpdateMode" class="update-form">
+    <h2>Update Post</h2>
+    <div>
+      <label for="updateTitle">Title:</label>
+      <input type="text" id="updateTitle" [(ngModel)]="updatedPost.title">
+    </div>
+    <div>
+      <label for="updateBody">Body:</label>
+      <textarea id="updateBody" [(ngModel)]="updatedPost.body"></textarea>
+    </div>
+    <button (click)="confirmUpdate()">Confirm Update</button>
+    <button (click)="cancelUpdate()">Cancel</button>
+  
