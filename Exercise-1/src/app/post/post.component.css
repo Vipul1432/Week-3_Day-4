@@ -1,0 +1,143 @@
+/* Styling for the post container */
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the update form */
+  .update-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for buttons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #b8010b;
+  }
+  
+  #create:hover {
+    background-color: #007bff !important;
+  }
+  
+  #update:hover {
+    background-color: #2a0dca!important;
+  }
+
+  /* Styling for input fields */
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 3px;
+  }
+  
+  /* Styling for headings */
+  h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Styling for form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Styling for delete button */
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+
+  /* Styling for success messages */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 8px;
+    border: 1px solid #c3e6cb;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for error messages */
+  .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 8px;
+    border: 1px solid #f5c6cb;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+
+  /* Styling for input fields */
+input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  /* Highlight input on focus */
+  input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Error state */
+  input[type="text"].error {
+    border-color: #dc3545;
+  }
+  
+  /* Styling for textarea */
+  textarea {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  /* Highlight textarea on focus */
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Error state */
+  textarea.error {
+    border-color: #dc3545;
+  }
+
+  .title {
+    display: flex;
+    color: #155724;
+  }
+  
