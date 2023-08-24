@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Post } from '../models/post.model';
 import { firstValueFrom } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,8 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  async getPosts(): Promise<Post[]> {
-    return firstValueFrom(this.http.get<Post[]>(this.apiUrl));
+  getPosts(): Observable<Post[]> {
+    return this.http.get<Post[]>(this.apiUrl);
   }
 
   async getPostById(id: number): Promise<Post> {
